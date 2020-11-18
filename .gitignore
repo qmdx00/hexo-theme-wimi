@@ -3,6 +3,7 @@
 
 
 # git ignore dirs
+**/node_modules/
 /.vscode/
 /.idea/
 /tmp/
