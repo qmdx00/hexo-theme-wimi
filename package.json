@@ -1,9 +1,12 @@
 {
   "name": "hexo-theme-wimi",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "a simple hexo theme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/qmdx00/hexo-theme-wimi.git"
+  },
+  "dependencies": {
+    "highlight.js": "^10.3.2"
   }
 }
