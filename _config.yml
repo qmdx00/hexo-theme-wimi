@@ -1,0 +1,20 @@
+
+# html lang
+language: en
+
+# main menu navigation
+menu:
+  Home: /
+  About: /about
+  Archives: /archives
+
+# stylesheets loaded in the <head>
+stylesheets:
+- /css/wimi.css
+- /lib/latexcss/latex.css
+- /lib/highlight/styles/rainbow.css
+
+# scripts loaded in the end of the body
+scripts:
+- /lib/highlight/highlight.pack.js
+- /js/wimi.js
