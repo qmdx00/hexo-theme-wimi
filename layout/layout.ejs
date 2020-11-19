@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<%- config.language %>">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <%- partial('_partials/head/head', {}, {cache: true}) %> 
+    <%- partial('_partials/head/title') %>
 </head>
 <body>
-    <%- partial('_partial/header') %> 
     <%- body %> 
-    <%- partial('_partial/footer') %> 
+    <%- partial('_partials/footer') %> 
 </body>
 </html>

@@ -1,1 +1,6 @@
-<h1>This is a tag</h1>
+<h1>This is tag page</h1>
+<ul>
+    <% site.tags.forEach(tag =>{ %>
+    <li><%- tag %></li>
+    <% }) %>
+</ul>

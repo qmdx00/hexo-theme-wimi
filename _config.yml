@@ -1,0 +1,9 @@
+# Hexo Engine Informations
+hexo:
+  version: "4.2.0"
+
+
+# copyright config
+copyright:
+  enable: true
+  content: "Powered by Wimi Yuan."
