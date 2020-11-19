@@ -1,1 +1,6 @@
-this is the index ejs file
+<h1>Posts List:</h1>
+<ul>
+<% site.posts.forEach(post => { %> 
+    <li><a href="<%- post.path %>"><%- post.title %></a></li> 
+<% }) %> 
+</ul>
