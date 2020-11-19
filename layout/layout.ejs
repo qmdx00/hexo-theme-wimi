@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="<%- config.language %>">
+
 <head>
-    <%- partial('_partials/head/head', {}, {cache: true}) %> 
-    <%- partial('_partials/head/title') %>
+  <%- partial('_partials/header') %>
 </head>
+
 <body>
-    <%- body %> 
-    <%- partial('_partials/footer') %> 
+  <%- body %>
+  <%- partial('_partials/footer') %>
 </body>
+
 </html>
