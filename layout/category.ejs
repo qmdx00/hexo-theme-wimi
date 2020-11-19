@@ -1,6 +1,6 @@
 <h1>This is category page</h1>
 <ul>
-  <% site.categories.forEach(category =>{ %>
-  <li><%- category %> </li>
+  <% site.categories.data.forEach(category =>{ %>
+  <li><%- category.name %> </li>
   <% }) %>
 </ul>

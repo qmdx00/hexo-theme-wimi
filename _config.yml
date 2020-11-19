@@ -7,3 +7,8 @@ hexo:
 copyright:
   enable: true
   content: "Powered by Wimi Yuan."
+
+menu:
+  Home: /
+  Archives: /Archives
+  Tags: /tags
