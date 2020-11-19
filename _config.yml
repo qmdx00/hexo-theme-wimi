@@ -11,8 +11,7 @@ menu:
 
 # stylesheets loaded in the <head>
 stylesheets:
-- /css/wimi.css
-- /lib/latexcss/latex.css
+- /css/main.css
 
 # scripts loaded in the end of the body
 scripts:
