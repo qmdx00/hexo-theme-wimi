@@ -1,6 +1,2 @@
 <h1>This is tag page</h1>
-<ul>
-  <% site.tags.data.forEach(tag =>{ %>
-  <li><%- tag.name %></li>
-  <% }) %>
-</ul>
+<%- tagcloud(site.tags) %>

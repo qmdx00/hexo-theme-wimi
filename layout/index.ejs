@@ -1,15 +1,18 @@
 <div id="posts-list">
-  <% site.posts.data.forEach(post => { %>
+  <% page.posts.data.forEach(post => { %>
   <div class="post-item">
-    <a href="<%= post.path %>" class="a-block">
+    <a href="<%= url_for(post.path) %>" class="a-block">
       <% if (post.title === "") { %>
       <div class="post-item-title">Untitled</div>
       <% } else { %>
       <div class="post-item-title"><%= post.title %></div>
       <% } %>
-      <div class="post-item-summary"><%- post.excerpt %></div>
+      <div class="post-item-summary"><%= strip_html(post.excerpt) %></div>
       <div class="post-item-meta"><%= time(post.date, 'yyyy/MM/DD HH:mm:SS') %></div>
+      <div>Tags: [ <%- strip_html(list_tags(post.tags, {class: 'tag', style: false, show_count: false, separator: '|'})) %> ]</div>
+      <div>Categories: [ <%- strip_html(list_categories(post.categories, {class: 'categories', style: false, show_count: false, separator: '/'})) %> ]</div>
     </a>
   </div>
   <% }) %>
+  <%- partial('_partials/index/paginator') %> 
 </div>

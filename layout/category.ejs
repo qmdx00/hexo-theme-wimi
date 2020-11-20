@@ -1,6 +1,2 @@
 <h1>This is category page</h1>
-<ul>
-  <% site.categories.data.forEach(category =>{ %>
-  <li><%- category.name %> </li>
-  <% }) %>
-</ul>
+<%- list_categories(site.categories, {show_count: false}) %>
