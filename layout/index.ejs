@@ -1,6 +1,15 @@
-<h1>Posts List:</h1>
-<ul>
+<div id="posts-list">
   <% site.posts.data.forEach(post => { %>
-  <li><a href="<%- post.path %>"><%- post.title %></a></li>
+  <div class="post-item">
+    <a href="<%= post.path %>" class="a-block">
+      <% if (post.title === "") { %>
+      <div class="post-item-title">Untitled</div>
+      <% } else { %>
+      <div class="post-item-title"><%= post.title %></div>
+      <% } %>
+      <div class="post-item-summary"><%- post.excerpt %></div>
+      <div class="post-item-meta"><%= time(post.date, 'yyyy/MM/DD HH:mm:SS') %></div>
+    </a>
+  </div>
   <% }) %>
-</ul>
+</div>

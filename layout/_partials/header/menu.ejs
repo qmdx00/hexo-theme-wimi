@@ -1,6 +1,6 @@
 <!-- header menu -->
-<ul>
-  <% for (name in theme.menu) { %>
-  <li><%= name %></li>
+<ul id="menu">
+  <% for (let name in theme.menu) { %>
+  <li><a href="<%- theme.menu[name] %>"><%- name %></a></li>
   <% } %>
 </ul>

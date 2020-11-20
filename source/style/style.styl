@@ -1,3 +1,17 @@
-footer {
-  color: red;
-}
+@import '_common/const.styl'
+@import '_partials/header.styl'
+@import '_partials/footer.styl'
+@import '_partials/post.styl'
+@import '_partials/index.styl'
+
+
+body
+  background-color: $body-color
+  margin: 0
+
+#main
+  display: block
+  width: $main-width 
+  margin: $main-margin
+  background-color: $main-color
+  box-shadow: 0 0 16px rgba(0,0,0,.12);

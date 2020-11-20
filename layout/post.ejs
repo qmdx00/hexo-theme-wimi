@@ -1,9 +1,9 @@
-<article>
+<article id="post">
   <header>
-    <h1>Title [ <%- page.title %> ]</h1>
-    <h1>Tag [ <%- page.tags %> ]</h1>
+    <div class="post-title"><%- page.title %></div>
+    <!-- <h1>Tag [ <%- page.tags %> ]</h1>
     <h1>Category [ <%- page.categories %> ]</h1>
-    <h1>Date [ <%- time(page.date, 'yyyy/MM/DD HH:mm:SS') %> ]</h1>
+    <h1>Date [ <%- time(page.date, 'yyyy/MM/DD HH:mm:SS') %> ]</h1> -->
     <hr>
   </header>
   <div id="content">
@@ -11,5 +11,7 @@
   </div>
   <footer>
     <!-- Todo article footer -->
+    <h1>Tag [ <%- page.tags %> ]</h1>
+    <h1>Category [ <%- page.categories %> ]</h1>
   </footer>
 </article>
