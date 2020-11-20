@@ -2,12 +2,12 @@
 
 A simple hexo theme.
 
-Reference:
+#### Reference:
 - Hexo
 - Ejs
 - Stylus
 
-Steps to use:
+#### Steps to use:
 1. Clone this repository: 
 ```bash
 cd hexo
