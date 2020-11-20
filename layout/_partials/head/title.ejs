@@ -1,22 +1,15 @@
 <!-- bowser bookmark page title  -->
-<%
-  var title = page.title;
-  if (is_archive()) {
-    title = 'Archives';
-    if (is_month()) {
-      title += ': ' + page.year + '/' + page.month;
-    } else if (is_year()) {
-      title += ': ' + page.year;
-    }
-  } else if (is_category()) {
-    title = 'Category: ' + page.category;
-  } else if (is_tag()) {
-    title = 'Tag: ' + page.tag;
-  }
+<% 
+var pageTitle = page.title || config.subtitle || ''
+if (is_archive()) pageTitle = 'Archives'
+if (is_tag()) pageTitle = 'Tag: ' + page.tag
+if (is_category()) pageTitle = 'Category: ' + page.category
+if (is_month()) pageTitle += ': ' + page.month + '/' + page.year
+if (is_year()) pageTitle += ': ' + page.year
 %>
 <title>
-  <% if (title) { %>
-  <%= title %> |
+  <% if (pageTitle) { %>
+  <%= pageTitle %> |
   <% } %>
   <%= config.title %>
 </title>
