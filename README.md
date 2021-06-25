@@ -1,4 +1,4 @@
-### Hexo Theme Wimi
+### Hexo Theme Wimi [WIP]
 
 A simple hexo theme.
 
